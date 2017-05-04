@@ -11,7 +11,7 @@ import metier.Compte;
 public class Lanceur {
 
 	public static void main(String[] args) throws Exception {
-		System.out.println("Initialisation du Marshaller");
+		System.out.println("Initialisation du Context JAXB");
 		JAXBContext context = JAXBContext.newInstance(Compte.class);
 		Marshaller marshaller = context.createMarshaller();
 		marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
