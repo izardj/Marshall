@@ -3,6 +3,7 @@ package metier;
 import java.util.Date;
 
 import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlTransient;
 
 @XmlRootElement
 public class Compte {
@@ -26,7 +27,8 @@ public class Compte {
 	public void setSolde(float solde) {
 		this.solde = solde;
 	}
-
+	
+	@XmlTransient
 	public Date getDateCreation() {
 		return dateCreation;
 	}
